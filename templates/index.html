@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citations Checker</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Citations Checker</h1>
+    </header>
+    <main>
+        <section class="citations">
+            <h3>Found Citations</h3>
+            <ul>
+                {% for citation in citations %}
+                    <li>
+                        <div class="citation">
+                            <p>ID: {{ citation.id }}</p>
+                            <p>Link: 
+                                <a href="{{ citation.link }}" target="_blank">
+                                    {% if citation.link %}{{ citation.link }}{% else %}No link available{% endif %}
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

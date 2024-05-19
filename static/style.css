@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background: #4a6f74;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 4px solid #3a4f54;
+}
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.citations {
+    width: 80%;
+    max-width: 800px;
+    background: #fce5e3;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.citations h3 {
+    margin-bottom: 1rem;
+}
+.citation {
+    background: #e0ece4;
+    padding: 1rem;
+    border: 1px solid #6d7270;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.citation p {
+    margin: 0;
+    line-height: 1.4;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
