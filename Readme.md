@@ -1,5 +1,3 @@
-```markdown
-
 # BeyondChats Assignment
 
 Building a Citation Checker From Given API - https://devapi.beyondchats.com/api/get_message_with_sources 
@@ -33,9 +31,9 @@ Citations Checker is a web application that fetches data from a given API endpoi
     ```
 
 3. Activate the virtual environment:
-        ```bash
-        venv\Scripts\activate
-        ```
+   ```bash
+   venv\Scripts\activate
+   ```
 
 4. Install the required packages:
     ```bash
@@ -46,7 +44,7 @@ Citations Checker is a web application that fetches data from a given API endpoi
 
 1. Run the Flask application:
     ```bash
-    python app.py
+    python Task.py
     ```
 
 2. Open your web browser and navigate to `http://127.0.0.1:5000/` to view the application.
@@ -72,7 +70,7 @@ citations-checker/
 
 ## Code Overview
 
-### 'Task.py'
+### Task.py
 
 This is the main file that contains the Flask application logic. It includes functions to:
 
@@ -81,10 +79,10 @@ This is the main file that contains the Flask application logic. It includes fun
 - Find citations by matching tokens in the response and context ('find_citations').
 - Define the home route to render the citations ('home').
 
-### `templates/index.html`
+### templates/index.html
 
 This file contains the HTML template for the main page. It dynamically displays the citations fetched and processed by the Flask application.
 
-### `static/style.css`
+### static/style.css
 
 This file contains the CSS styles for the application. It styles the main page and the citations list.
